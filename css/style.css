@@ -4,6 +4,8 @@ body {
 
 nav {
 	background-color: orange;
+	position: fixed; top:0%;
+	width: 100%;
 }
 
 nav h1 {
@@ -14,14 +16,17 @@ nav h1 {
 nav ul {
 	display: inline-block;
 	float: right;
+	margin-right: 30px;
 }
 
 nav ul li {
 	display: inline-block;
+	margin: 0 10px;
 }
 
 main {
-	width: 100%
+	width: 100%;
+	margin-top: 65px;
 }
 
 header h1 {
@@ -29,19 +34,61 @@ header h1 {
 }
 
 #about {
-	background: linear-gradient(white, #f78949);
+	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
 	height: 400px;
 	width: 100%;
 }
 
 #projects {
-	background: linear-gradient(white, #f78949);
+	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
 	height: 400px;
 	width: 100%;
 }
 
 #contact {
-	background: linear-gradient(white, #f78949);
+	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
 	height: 400px;
 	width: 100%;
 }
+
+@media screen and (max-width: 457px) {
+
+  nav h1 {
+    display: block;
+    margin: 0;
+    margin-left: 25px;
+    text-align: center;
+    padding: 5px;
+    }
+
+  nav ul li {
+    margin: 0;
+    text-align: center;
+    padding: 0 27px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin: 0;
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 6px 0;
+
+    border-top: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: orange;
+  }
+
+  main {
+  	margin-top: 85px;
+  }
+}
+
+
+
