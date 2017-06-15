@@ -42,8 +42,8 @@ a:hover {
 
 main {
 	width: 100%;
-	margin-top: 415px;
     background: white;
+    margin-top: 350px;
 }
 
 header h1 {
@@ -52,26 +52,100 @@ header h1 {
 	font-size: 46px;
 }
 
-#about {
-	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
-	height: 800px;
+#backg {
 	width: 100%;
+	height: 300px;
     position: fixed;
     top: 6.2%;
     z-index: -1;
+}
+
+#backgimg {
+	background-image: url("../images/minimalist_wallpaper.jpg");
+	width: 100%;
+    height: 300px;
+}
+
+#about {
+	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
+	height: 430px;
+	width: 100%;
+	margin-top: 40px;
+}
+
+#about-container {
+	width: 885px;
+	height: inherit;
+	margin: auto;
+    background: blue;
+}
+
+#about div section {
+	width: 610px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+#about div section p {
+	margin: 80px 20px;
+}
+
+#me {
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 50px;
+	width: 263px;
+    height: 263px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#me img {
+	width: inherit;
+	border-radius: inherit;
 }
 
 #projects {
 	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
 	height: 600px;
 	width: 100%;
-	padding-top: 1px;
+	padding: 1px;
 }
 
 #contact {
 	background: linear-gradient(white, rgba(255, 165, 0, 0.44));
 	height: 600px;
 	width: 100%;
+}
+
+@media screen and (max-width: 965px) {
+
+  #me {
+  	margin: auto;
+  	margin-top: 13px;
+  	display: block;
+  }
+
+  #about div section {
+  	display: block;
+  	width: 100%;
+  }
+
+  #about div section p {
+  	width: 100%;
+  	margin: 0;
+  	padding: 25px;
+  }
+
+  #about {
+  	width: 100%;
+  	height: 633px;
+  }
+
+  #about-container {
+  	width: 100%;
+  }
 }
 
 @media screen and (max-width: 457px) {
@@ -110,16 +184,16 @@ header h1 {
   }
 
   #about {
-  	margin-top: 18px;
-  }
+  	margin-top: 50px;
 
-  main {
   }
 
   header h1 {
   	margin: 10px;
   	font-size: 26px;
   }
+
+  
 }
 
 
